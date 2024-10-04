@@ -70,3 +70,58 @@ integers.remove(6)
 
 print(integers)
 
+#pop
+integers.pop(3)
+print(integers)
+
+list_fruits = ["mandarine", "strawberry", "bannana", "grape", "blueberry"]
+
+#del
+del list_fruits[2]
+print(list_fruits)
+
+list_names = ["Gabriel", "Edgar", "Isai"]
+list_names.append("George")
+print(list_names)
+
+names2 = ["Sam", "Mateo", "David"]
+print(names2.index("Sam"))
+print(names2.index("David"))
+
+my_list = ["a", "b", "c", "d"]
+
+print(my_list.index("c"))
+
+#squares
+list_of_squares = []
+for int in range (1,10):
+    square =  int**2
+    list_of_squares.append(square)
+    
+    print(list_of_squares)
+    
+#list comprehension
+#[expression for item in list if condition]
+
+squared2 = [item**2 for item in range(1,10)]
+print(squared2)
+
+numbers = [1,2,3,4,5,6,7,8,9]
+
+for number in numbers: 
+    print(number**3)
+    
+    cubic = [numbers**3 for number in numbers]
+    print(cubic)
+    
+    #double the value of the numbers
+    numbers = [1,2,3,4,5,6,7,8,9]
+    doubled_numbers = [number*2 for number in numbers if number%2 == 0]
+    print(doubled_numbers)
+    
+    
+    
+
+    
+        
+        
