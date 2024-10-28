@@ -49,7 +49,7 @@ print(result)
 # Task: Create a new list, and name it square_numbers, that contains the squares of the original list numbers.
 # Requirements: Use a list comprehension for this task.
 number_list = [10,12,2,3,5,13,32,23,9]
-square_numbers = [number**3 for number in number_list]
+square_numbers = [number**2 for number in number_list]
 print(square_numbers)
  
 #TODO Project 6: Filtering with List Comprehensions (10 points)
@@ -64,19 +64,21 @@ print(filtered_list)
 # Task: append a list (you will create that list) in the position #4 in the list_stuff
 # Print the final list 
 my_list = ["rm", "siuga", "v", "jhope"]
-list_stuff.append(my_list)
+list_stuff.insert(3,[my_list])
 print(list_stuff)
 
 #TODO Project 8: loops with Lists (15 points)
 # Task: Write a loop that keeps removing elements from the list until the number_list contains only numbers less than 30.
 # Requirements: Use while, pop(), remove(), del, sort().
-
-
+for number in number_list:
+    if number <30:
+        print(number)
 #TODO Project 9: Custom Function (15 points)
 # Create a copy of the values from the original number_list, and name it number_list_2
 # Use the list number_list_2
 # Task: Write a function that takes a list and prints a new list with the odd numbers doubled and even numbers unchanged.
 # Requirements: Use list comprehension inside the function, and print().
+def process_list():
 
 #TODO Project 10: List Sorting and Methods (8 points)
 # Task: Sort the number_list_2 in descending order and print the index of the highest and lowest values in the list.
